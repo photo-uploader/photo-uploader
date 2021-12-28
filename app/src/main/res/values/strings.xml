@@ -2,4 +2,8 @@
     <string name="app_name">Photo Uploader</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_out">Sign out</string>
+    <string name="go_to_upload">Go to upload</string>
+    <string name="select_image">Select image</string>
+    <string name="upload_item">Upload item</string>
+    <string name="is_defect">is defect</string>
 </resources>

@@ -38,6 +38,9 @@ class ProfileFragment : NavigatorFragment(R.layout.fragment_profile) {
             viewModel.signOut()
         }
 
+        view.findViewById<Button>(R.id.b_goto_upload).setOnClickListener {
+            navigator.navigateTo(Destination.ImageUploadScreen)
+        }
     }
 }
 

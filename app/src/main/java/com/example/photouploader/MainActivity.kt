@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import com.example.photouploader.ui.SignInFragment
-import com.example.photouploader.ui.ProfileFragment
-import com.example.photouploader.ui.Destination
-import com.example.photouploader.ui.Navigator
+import com.example.photouploader.ui.*
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -28,6 +25,7 @@ class MainActivity : AppCompatActivity(), Navigator {
     override fun navigateTo(destination: Destination) = when (destination) {
         Destination.SignInScreen -> navigateToFragment(SignInFragment())
         Destination.UserProfileScreen -> navigateToFragment(ProfileFragment())
+        Destination.ImageUploadScreen -> navigateToFragment(UploadFragment())
         is Destination.GoogleAccountDialog -> showGoogleAccountDialog(destination)
     }
 

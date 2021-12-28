@@ -13,6 +13,7 @@ sealed class Destination {
 
     object SignInScreen : Destination()
     object UserProfileScreen: Destination()
+    object ImageUploadScreen: Destination()
 
     data class GoogleAccountDialog(
         val intent: Intent,

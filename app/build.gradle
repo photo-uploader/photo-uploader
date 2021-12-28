@@ -45,7 +45,9 @@ dependencies {
     def fb_db_version = "20.0.3"
     implementation "com.google.firebase:firebase-database:$fb_db_version"
     implementation "com.google.firebase:firebase-database-ktx:$fb_db_version"
+
     implementation "com.google.firebase:firebase-auth-ktx:21.0.1"
+    implementation "com.google.firebase:firebase-storage-ktx:20.0.0"
     implementation "com.google.android.gms:play-services-auth:20.0.0"
 
     def hilt_version = "2.38.1"
